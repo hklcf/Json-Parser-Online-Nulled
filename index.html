@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Json Parser Online</title>
+        <meta name="keywords" content="JSON,javascript object notation,parser,parseur,online,tool,free,javascript,tree,treeview,tree view,post,syntax highlighting,парсер,解析器,محلل جسون">
+        <meta name="description" content="Analyze your JSON string as you type with an online Javascript parser, featuring tree view and syntax highlighting. Processing is done locally: no data send to server.">
+        <meta name="author" content="Olivier Cuenot">
+        <meta name="author" content="Cracked by HKLCF">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+        <link rel="icon" href="favicon/valid.png" id="favicon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="beautify">
+        <div class="ui-editor">
+            <textarea class="ui-field json" id="editor" spellcheck="false" contenteditable="true">{"ID":null,"name":"Doe","first-name":"John","age":25,"hobbies":["reading","cinema",{"sports":["volley-ball","badminton"]}],"address":{}}</textarea>
+            <div class="ui-resizer"></div>
+        </div>
+        <div class="ui-aside">
+            <div class="ui-notification" id="status"></div>
+            <div class="ui-menu">
+                <div class="ui-menu-dropdown">
+                    <div class="ui-menu-panel">
+                        <div class="ui-menu-item ui-option" id="beautify">Beautify</div>
+                        <div class="ui-menu-item ui-option" id="show-types">Show Types</div>
+                        <div class="ui-menu-item ui-option" id="show-indexes">Show Indexes</div>
+                        <div class="ui-menu-item about">About</div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui-treeview json" id="result"></div>
+            <div class="ui-searchbar">
+                <div style="position: absolute"></div>
+            </div>
+        </div>
+        <div class="popup-container">
+            <div class="popup-centerer">
+                <div class="popup">
+                    <div class="main">
+                        <div class="title">json parser online</div>
+                        <div class="author">by olivier cuenot</div>
+                        <div class="author">(Cracked by HKLCF)</div>
+                        <div class="links">
+                            donation: <a class="link" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=8XHHTPFJG2Q5Y">paypal</a>
+                            , <a class="link" id="bitcoin">bitcoin</a>
+                        </div>
+                    </div>
+                    <div class="second">
+                        <p>please donate to bitcoin address:</p>
+                        <p>
+                            <b>1BRCDcoktxctn8amB58MqvqrpKD63zAp2v</b>
+                        </p>
+                        <p>
+                            <img src="img/bitcoin-address-qr.png">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js" async=""></script>
+    </body>
+</html>
