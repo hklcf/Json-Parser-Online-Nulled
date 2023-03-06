@@ -439,7 +439,7 @@ function parseValue(snatch,closingBracket)
 				{
 				result=
 					{
-					html:parseObject(snatch).toString(),valid:!hasError
+					html:parseObject(snatch).toString().replaceAll('&','&amp;'),valid:!hasError
 				}
 			}
 			else
