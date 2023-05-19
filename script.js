@@ -5,13 +5,17 @@
 		{
 		return typeof eval(variable)
 	};
-	/* Cracked by HKLCF
-  if(top!=window)
-		{
-		top.location.replace('http://json.parser.online.fr');
-		return
-	}
-  */
+	// copy
+	(function() {
+        var $editor = document.getElementById('editor'),
+        $clipboardButton = document.getElementById('btn-copy');
+
+        $clipboardButton.addEventListener('click', function (ev) {
+            var editorObj = JSON.parse($editor.value);
+            navigator.clipboard.writeText(JSON.stringify(editorObj, null, 4));
+        })
+    })();
+
 	(function()
 		{
 		var favicon='favicon',online='online',$status=document.getElementById('status'),slash='/',dot='.',parser='parser',semicolumn=':',json='json',$head=document.querySelector('head'),$result=document.getElementById('result'),$editor=document.getElementById('editor'),fr='fr',event_keyup='keyup',event_click='click',root='http'+semicolumn+slash+slash+json+dot+parser+dot+online+dot+fr+slash;
@@ -25,30 +29,6 @@
 			}
 			,false)
 		}
-		(function()
-			{
-			var popupContainer=document.querySelector('.popup-container'),popup=document.querySelector('.popup');
-			document.querySelector('.about').addEventListener(event_click,function()
-				{
-				popupContainer.classList.add('show')
-			}
-			,false);
-			document.querySelector('.popup-centerer').addEventListener(event_click,function(e)
-				{
-				if(e.target.classList.contains('popup-centerer'))
-					{
-					popupContainer.classList.remove('show');
-					popup.classList.remove('bitcoin')
-				}
-			}
-			,false);
-			document.querySelector('#bitcoin').addEventListener(event_click,function()
-				{
-				popup.classList.add('bitcoin')
-			}
-			)
-		}
-		)();
 		(function()
 			{
 			$result.addEventListener(event_click,function(ev)

@@ -232,42 +232,6 @@ ol,ul {
     }
 }
 
-.popup-container {
-    background: rgba(0,0,0,.8);
-    display: none;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2
-}
-
-.popup-container.show {
-    display: table
-}
-
-.popup-centerer {
-    cursor: pointer;
-    display: table-cell;
-    vertical-align: middle
-}
-
-.popup {
-    background: url(img/avatar.png) #FFF bottom center no-repeat;
-    border: solid 10px #FFF;
-    border-radius: 50%;
-    cursor: default;
-    font-family: Ubuntu,Arial,Helvetica,sans-serif;
-    height: 290px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 50%;
-    padding: 4em 5em 6em;
-    position: relative;
-    text-align: center;
-    width: 290px
-}
-
 .links {
     font-size: 73%;
     margin-top: 1.4em
