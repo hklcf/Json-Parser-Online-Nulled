@@ -1,4 +1,5 @@
-body,html {
+body,
+html {
     height: 100%;
     margin: 0;
     padding: 0
@@ -13,13 +14,14 @@ body {
     top: 0
 }
 
-ol,ul {
+ol,
+ul {
     list-style-type: none
 }
 
 .ui-notification {
     background: #FF8;
-    font: 12px/24px arial,sans-serif;
+    font: 12px/24px arial, sans-serif;
     display: none;
     margin: 0 0 0 -4px;
     padding: 0 10px;
@@ -54,7 +56,9 @@ ol,ul {
     width: 1px
 }
 
-.resizing,.resizing:hover,.ui-resizer:hover {
+.resizing,
+.resizing:hover,
+.ui-resizer:hover {
     background: #EEE;
     border-color: #EEE
 }
@@ -117,8 +121,8 @@ ol,ul {
     position: fixed;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    -webkit-transition: opacity 3500ms ease,-webkit-transform 100ms ease;
-    transition: opacity 3500ms ease,transform 100ms ease;
+    -webkit-transition: opacity 3500ms ease, -webkit-transform 100ms ease;
+    transition: opacity 3500ms ease, transform 100ms ease;
     width: 40px
 }
 
@@ -146,10 +150,10 @@ ol,ul {
 .ui-menu-panel {
     background: #FFF;
     border: solid 1px #CCC;
-    box-shadow: 0 3px 2px -3px rgba(0,0,0,.2);
+    box-shadow: 0 3px 2px -3px rgba(0, 0, 0, .2);
     color: #555;
     display: block;
-    font-family: Ubuntu,Arial,sans-serif;
+    font-family: Ubuntu, Arial, sans-serif;
     font-size: 78%;
     padding: 2px;
     position: relative;
@@ -201,13 +205,15 @@ ol,ul {
     width: 1.2em
 }
 
-.beautify #beautify::before,.show-indexes #show-indexes::before,.show-types #show-types::before {
+.beautify #beautify::before,
+.show-indexes #show-indexes::before,
+.show-types #show-types::before {
     content: '✔'
 }
 
 @media (max-width: 500px) {
     .ui-editor {
-        float:none;
+        float: none;
         height: 50%;
         width: 100%
     }
@@ -233,7 +239,7 @@ ol,ul {
 }
 
 .popup-container {
-    background: rgba(0,0,0,.8);
+    background: rgba(0, 0, 0, .8);
     display: none;
     height: 100%;
     position: absolute;
@@ -257,7 +263,7 @@ ol,ul {
     border: solid 10px #FFF;
     border-radius: 50%;
     cursor: default;
-    font-family: Ubuntu,Arial,Helvetica,sans-serif;
+    font-family: Ubuntu, Arial, Helvetica, sans-serif;
     height: 290px;
     margin-left: auto;
     margin-right: auto;
@@ -292,11 +298,13 @@ small {
     background-image: none
 }
 
-.bitcoin .main,.second {
+.bitcoin .main,
+.second {
     display: none
 }
 
-.bitcoin .second,.main {
+.bitcoin .second,
+.main {
     display: block;
     margin: 0 -3em
 }
@@ -337,7 +345,7 @@ small {
 }
 
 .error::after {
-    background: rgba(255,0,0,.4);
+    background: rgba(255, 0, 0, .4);
     border-radius: 2px;
     content: "";
     display: block;
@@ -349,7 +357,7 @@ small {
 }
 
 .error:hover::after {
-    background: rgba(255,0,0,.8)
+    background: rgba(255, 0, 0, .8)
 }
 
 .show-indexes ol {
@@ -370,18 +378,23 @@ small {
     background-color: #a40000
 }
 
-li,ol,ul {
+li,
+ol,
+ul {
     display: inline;
     margin: 0;
     padding: 0
 }
 
-.beautify li,.beautify ol,.beautify ul {
+.beautify li,
+.beautify ol,
+.beautify ul {
     border-left: solid 1px transparent;
     display: block
 }
 
-.beautify ol,.beautify ul {
+.beautify ol,
+.beautify ul {
     margin: 0 0 0 2px;
     padding: 0 0 0 23px
 }
@@ -390,13 +403,17 @@ li,ol,ul {
     border-radius: 10px 0 0
 }
 
-.collapsed>.toggle-end,.toggle {
+.collapsed>.toggle-end,
+.toggle {
     cursor: pointer;
     margin: -10px;
     padding: 10px
 }
 
-.collapsed:hover>.toggle,.collapsed:hover>.toggle-end,.toggle:hover,.toggle:hover~.toggle-end {
+.collapsed:hover>.toggle,
+.collapsed:hover>.toggle-end,
+.toggle:hover,
+.toggle:hover~.toggle-end {
     font-weight: 700
 }
 
@@ -405,26 +422,28 @@ li,ol,ul {
 }
 
 .toggle:hover+ol {
-    border-left: solid 1px rgba(164,0,0,.5)
+    border-left: solid 1px rgba(164, 0, 0, .5)
 }
 
 .toggle:hover+ul {
-    border-left: solid 1px rgba(114,159,207,.5)
+    border-left: solid 1px rgba(114, 159, 207, .5)
 }
 
 .toggle:hover+ol * {
-    color: rgba(164,0,0,.5)
+    color: rgba(164, 0, 0, .5)
 }
 
 .toggle:hover+ul * {
-    color: rgba(114,159,207,.5)
+    color: rgba(114, 159, 207, .5)
 }
 
-.collapsed>ol,.collapsed>ul {
-    display: none!important
+.collapsed>ol,
+.collapsed>ul {
+    display: none !important
 }
 
-.object>.toggle,.object>.toggle-end {
+.object>.toggle,
+.object>.toggle-end {
     color: #729FCF
 }
 
@@ -438,7 +457,8 @@ li,ol,ul {
     display: inline
 }
 
-.array>.toggle,.array>.toggle-end {
+.array>.toggle,
+.array>.toggle-end {
     color: #A40000
 }
 
@@ -452,7 +472,11 @@ li,ol,ul {
     display: inline
 }
 
-.array::before,.boolean::before,.number::before,.object::before,.string::before {
+.array::before,
+.boolean::before,
+.number::before,
+.object::before,
+.string::before {
     border-radius: 2px;
     color: #FFF;
     margin: 0 2px;
